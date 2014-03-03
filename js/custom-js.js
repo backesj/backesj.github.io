@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    // Scrolling functions
+    $('body').scrollspy({ target: '.navbar-example' });
+
     // navigation click actions
     $('.scroll-link').on('click', function(event){
         event.preventDefault();

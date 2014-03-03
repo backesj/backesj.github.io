@@ -1,3 +1,8 @@
+/* Lucas CSS */
+.active {
+    background-color: white;
+}
+
 .header {
     position: fixed;
     width: 100%;
