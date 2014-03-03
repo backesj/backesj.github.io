@@ -3,6 +3,12 @@
     background-color: white;
 }
 
+.left-side {
+    background-color: blue;
+}
+
+/* Other CSS */
+
 .header {
     position: fixed;
     width: 100%;
@@ -19,7 +25,6 @@
 .page-section {
     width: 100%;
     min-height: 800px;
-    padding: 50px 0;
     border-bottom: 10px solid #fff;
 }
 .page-section h1 {
@@ -91,4 +96,71 @@
         font-size: 1em;
         margin: 0 0 20px;
     }
+}
+
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+footer {
+  padding: 30px 0;
+}
+
+/*
+ * http://startbootstrap.com/templates/simple-sidebar.html#
+ */
+ #wrapper {
+  padding-left: 300px;
+  transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+  margin-left: -300px;
+  left: 300px;
+  width: 300px;
+  background: #000;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+
+.sidebar-nav {
+  margin-left: 50px;
+  position: absolute;
+  top: 0;
+  width: 125px;
+  list-style: none;
+}
+
+@media (max-width:767px) {
+
+    #wrapper {
+      padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+      left: 0;
+    }
+
+    #wrapper.active {
+      position: relative;
+      left: 250px;
+    }
+
+    #wrapper.active #sidebar-wrapper {
+      left: 250px;
+      width: 250px;
+      transition: all 0.4s ease 0s;
+    }
+
 }
