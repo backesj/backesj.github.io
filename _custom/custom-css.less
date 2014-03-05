@@ -1,162 +1,30 @@
-/* My LESS code */
-@sidebar-width: 200px;
+/* Custom LESS code */
+@import url("http://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("//fonts.googleapis.com/css?family=Londrina+Solid");
 
-a {
+
+@main-color: blue;
+@secondary-color: #428bca;
+
+.blue-text {
+  color: @secondary-color;
+}
+
+h1, h2, h3 {
   color: white;
+  text-shadow: rgba(0, 0, 0, 0.5) 0.1em 0.1em 0.1em;
 }
 
-.active {
-  a {
-    color: #E0C266;
-  }
+h1 {
+  font-family: "Lodrina Solid";
 }
 
-.left-side {
-  background-color: blue;
+h2 {
+  font-size: 3em;
+  font-family: "Roboto Condensed";
+  font-weight: strong;
 }
 
-#page-content-wrapper {
-  background: url(../img/waterfall.jpeg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-/* Other CSS */
-.page-section {
-    width: 100%;
-    min-height: 800px;
-    border-bottom: 10px solid #fff;
-}
-.page-section h1 {
-    font-size: 4em;
-}
-.page-section h1 span {
-    font-weight: 200;
-}
-.page-section h2 {
-    font-size: 3em;
-    font-weight: 900;
-    color: #fff;
-    margin: 0 0 30px;
-    text-shadow: 2px 2px 2px #000;
-}
-.page-section p {
-    font-size: 1.2em;
-    font-weight: 200;
-    margin: 0 25% 20px 0;
-}
-.page-section p.lead {
-    font-size: 1.8em;
-}
-.page-section p.caption {
-    color: #fff;
-    padding: 20px;
-    background: url(../img/trans_black_25.png);
-    text-shadow: 1px 1px 1px #000;
-}
-.page-section#africa {
-}
-.page-section#antarctica {
-}
-.page-section#asia {
-}
-.page-section#australia {
-    margin-left: -50px;
-  background-color: white;
-}
-.page-section#europe {
-}
-.page-section#north-america {
-}
-.page-section#south-america {
-}
-
-@media (min-width: 768px) {
-    .header .navbar-brand {
-        padding-left: 0;
-    }
-    .navbar-nav {
-        float: right;
-    }
-}
-@media (max-width: 480px) {
-    .page-section h1 {
-        font-size: 3em;
-    }
-    .page-section h2 {
-        font-size: 2em;
-    }
-    .page-section p {
-        font-size: 1em;
-        margin: 0 0 20px;
-    }
-}
-
-/*
- * Style tweaks
- * --------------------------------------------------
- */
-html,
-body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
-}
-footer {
-  padding: 30px 0;
-}
-
-/*
- * http://startbootstrap.com/templates/simple-sidebar.html#
- */
- #wrapper {
-  padding-left: @sidebar-width;
-  transition: all 0.4s ease 0s;
-}
-
-#sidebar-wrapper {
-  margin-left: -@sidebar-width;
-  left: @sidebar-width;
-  width: @sidebar-width;
-  background: #5b6b82 !important;
-  position: fixed;
-  height: 100%;
-  overflow-y: auto;
-  z-index: 1000;
-  transition: all 0.4s ease 0s;
-}
-
-#page-content-wrapper {
-  width: 100%;
-}
-
-.sidebar-nav {
-  margin-left: 50px;
-  position: absolute;
-  top: 0;
-  width: 125px;
-  list-style: none;
-}
-
-@media (max-width:1080px) {
-
-  #wrapper {
-    padding-left: 0;
-  }
-
-  #sidebar-wrapper {
-    left: 0;
-  }
-
-  #wrapper.active {
-    position: relative;
-    left: @sidebar-width;
-  }
-
-  #wrapper.active #sidebar-wrapper {
-    left: @sidebar-width;
-    width: @sidebar-width;
-    transition: all 0.4s ease 0s;
-  }
-
+.date {
+  color: @secondary-color;
 }
