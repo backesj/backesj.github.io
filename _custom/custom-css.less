@@ -1,26 +1,26 @@
 /* Custom LESS code */
+
+/* Custom fonts */
 @import url("http://fonts.googleapis.com/css?family=Roboto+Condensed");
 @import url("//fonts.googleapis.com/css?family=Londrina+Solid");
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
 
-
-@main-color: blue;
+/* Custom Variables */
+@main-color: #7fbbda;
 @secondary-color: #428bca;
+@header-fonts: Montserrat, "Helvetica Neue";
+
 
 body {
   font-family: "Times New Roman";
+  width: 100%;
+  height: 100%;
 }
 
-.header {
-  h1, h2, h3 {
-    color: white;
-    text-shadow: rgba(0, 0, 0, 0.5) 0.1em 0.1em 0.1em;
-  }
+html {
+    width: 100%;
+    height: 100%;
 }
-
-.blue-text {
-  color: @secondary-color;
-}
-
 
 h1 {
   font-family: "Lodrina Solid";
@@ -28,8 +28,26 @@ h1 {
 
 h2 {
   font-size: 3em;
-  font-family: "Roboto Condensed";
+  font-family: @header-fonts;
   font-weight: strong;
+}
+
+.header {
+  h1, h2, h3 {
+    text-align: left;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.5) 0.1em 0.1em 0.1em;
+  }
+  .hidden-text {
+    display: none;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+  }
+}
+
+.blue-text {
+  color: @secondary-color;
 }
 
 footer {
@@ -40,29 +58,43 @@ footer {
 /* Custom Navbar */
 
 .navbar {
+  padding: 0px 0;
+  border: 0px;
+  background-color: #444;
+  font-family: @header-fonts;
 }
 
-body {
-    width: 100%;
-    height: 100%;
+.navbar-default .navbar-brand {
+  color: white;
 }
 
-html {
-    width: 100%;
-    height: 100%;
+.navbar-collapse.navbar-ex1-collapse > ul > li > a {
+  color: white;
+}
+
+// These are lazy css paths
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ccc;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: @main-color;
 }
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
+      background-color: transparent;
+      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
     .top-nav-collapse {
-        /* Customize the look and feel of the collapsed top nav here */
-        padding: 0;
+      /* Customize the look and feel of the collapsed top nav here */
+      padding: 0;
+      background-color: #444;
+      border-width: 0 0 1px;
+      border-color: #e7e7e7;
     }
 }
 

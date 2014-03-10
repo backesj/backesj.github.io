@@ -8,7 +8,7 @@ $(window).scroll(function() {
 });
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
+/*$(function() {
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
@@ -16,4 +16,4 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-});
+});*/
