@@ -83,6 +83,7 @@ footer {
   border: 0px;
   background-color: #444;
   font-family: @header-fonts;
+  font-size: 14px;
 }
 
 .navbar-default .navbar-brand {
@@ -117,6 +118,17 @@ footer {
       border-width: 0 0 1px;
       border-color: #e7e7e7;
     }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .header .hidden-text {
+    font-size: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+  }
 }
 
 /* MIXINS */

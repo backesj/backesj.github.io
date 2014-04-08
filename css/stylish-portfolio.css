@@ -219,11 +219,11 @@ i.scroll:hover {
 @media (max-width: 768px) {
 
   .header {
-	background: url(../img/waterfall-bw.jpg) no-repeat center center scroll;
+   background: url(../img/waterfall-bw.jpg) no-repeat center center scroll;
   }
 
   .venue-section {
-	background: url(../img/waterfall.jpeg) no-repeat center center fixed;
+	background: url(../img/hickery-nut-creek-sml.JPG) no-repeat center center fixed;
   }
 
   .map {
