@@ -214,8 +214,16 @@ i.scroll:hover {
 
 @media (max-width: 768px) {
 
+.venue-section {
+  background: url(../img/venue-front-blurred.jpg) no-repeat center;
+}
+
+  .header {
+  background: url(../img/waterfall-bw.jpg) no-repeat center;
+  height: 650px;
+}
   .map {
-	height: 75%;
+    height: 75%;
   }
 
 }
