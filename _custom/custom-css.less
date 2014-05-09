@@ -1,16 +1,18 @@
 /* Custom LESS code */
 
 /* Custom fonts */
-@import url("http://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import url("http://fonts.googleapis.com/css?family=Roboto+Slab");
 @import url("//fonts.googleapis.com/css?family=Londrina+Solid");
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display+SC);
 
 /* Custom Variables */
 @main-color: #91bbe1;
 @secondary-color: #428bca;
+@off-white: #f2f2f2;
 @light-blue: @main-color;
-@header-fonts: Montserrat, "Helvetica Neue";
-
+@dark-blue: #001A4E;
+@header-fonts: 'Playfair Display SC', serif;
 
 body {
   font-family: "Lodrina Solid";
@@ -24,8 +26,22 @@ html {
     height: 100%;
 }
 
-h1 {
-  font-family: "Lodrina Solid";
+// Pretty hover links!
+a {
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.3s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: @header-fonts;
 }
 
 h2 {
@@ -36,24 +52,31 @@ h2 {
 
 .header {
   h1, h2, h3 {
-    text-align: left;
-    color: white;
+    text-align: center;
+    color: @off-white;
     text-shadow: rgba(0, 0, 0, 0.5) 0.1em 0.1em 0.1em;
   }
   .hidden-text {
     display: none;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 100px;
+  }
+}
+
+.jumbo-text {
+  position: absolute; top: 65%; left: 50%;
+  width: 550px;
+  margin-left: -275px;
+  h2 {
+    font-size: 35px;
+    font-family: "Roboto Slab", serif;
   }
 }
 
 .blue-text {
-  color: @secondary-color;
+  color: @light-blue;
 }
 
 .dark-blue-text {
-  color: #001A4E;
+  color: @dark-blue;
 }
 
 .orange-text {
@@ -65,11 +88,11 @@ h2 {
 }
 
 .fa-gift {
-  font-size: 120px;
+  font-size: 150px;
 }
 
 footer {
-  border-top: 1px solid lightgrey;
+  .custom-borders;
   padding-bottom: 10px;
   padding-top: 0px;
   background-color: @light-blue;
@@ -77,13 +100,40 @@ footer {
 
 /* ============ Section Styles ============*/
 
-.events {
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.welcome {
   background-color: @light-blue;
+  color: white;
+  .custom-borders;
+}
+
+.events {
+  background-color: @off-white;
+  .custom-borders;
+  border-bottom: 1px solid @dark-blue;
 }
 
 .venue-section {
   color: #fff;
   text-shadow: rgba(0, 0, 0, 0.5) 0.1em 0.1em 0.1em;
+}
+
+.venue {
+  background-color: white;
+  .custom-borders;
+}
+
+.accommodations {
+  background-color: @off-white;
+  .custom-borders;
+}
+
+.registry {
+  .custom-borders;
 }
 
 /* Custom Navbar */
@@ -139,9 +189,20 @@ footer {
     padding-right: 0px;
     text-align: center;
   }
+
+  .jumbo-text {
+    font-size: 10px;
+    position: absolute; top: 65%; left: 50%;
+    width: 350px;
+    margin-left: -175px;
+  }
 }
 
 /* MIXINS */
+
+.custom-borders {
+  border-top: 1px solid @dark-blue;
+}
 
 .blur-img {
   filter: blur(5px);
