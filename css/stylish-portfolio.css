@@ -152,9 +152,10 @@ i.service-icon {
 
 .venue-section {
   display: table;
-  height: 200px;
+  height: 250px;
   width: 100%;
-  background: url(../img/hickery-nut-creek.JPG) no-repeat center center fixed;
+  position: relative;
+  background: url(../img/venue-front-blurred.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -220,10 +221,6 @@ i.scroll:hover {
 
   .header {
    background: url(../img/waterfall-bw.jpg) no-repeat center center scroll;
-  }
-
-  .venue-section {
-	background: url(../img/hickery-nut-creek-sml.JPG) no-repeat center center fixed;
   }
 
   .map {
