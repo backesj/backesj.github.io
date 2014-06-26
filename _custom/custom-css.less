@@ -108,13 +108,18 @@ footer {
 .welcome {
   background-color: @light-blue;
   color: white;
+}
+
+.welcome, .events, .venue, .accommodations, .registry, .thingstoknow, .rsvp {
   .custom-borders;
 }
 
 .events {
-  background-color: @off-white;
-  .custom-borders;
   border-bottom: 1px solid @dark-blue;
+}
+
+.events, .accommodations, .rsvp {
+  background-color: @off-white;
 }
 
 .venue-section {
@@ -122,23 +127,18 @@ footer {
   text-shadow: rgba(0, 0, 0, 0.5) 0.1em 0.1em 0.1em;
 }
 
-.venue {
-  background-color: white;
-  .custom-borders;
-}
-
-.accommodations {
-  background-color: @off-white;
-  .custom-borders;
-}
-
-.registry {
-  .custom-borders;
-}
-
-.rsvp {
-  background-color: @off-white;
-  .custom-borders;
+.thingstoknow {
+  ul {
+    list-style: none;
+    padding: 10px 30px 10px 30px;
+    font-weight: bold;
+    @media (min-width: 768px) {
+      padding: 10px 120px 10px 120px;
+    }
+  }
+  li {
+    padding: 10px;
+  }
 }
 
 /* Custom Navbar */
