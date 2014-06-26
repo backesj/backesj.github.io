@@ -12,6 +12,8 @@ $('body').scrollspy({ offset: 70 });
 var lgwidth = 1200;
 var mdwidth = 992;
 var smwidth = 768;
+var xssmwidth = 450;
+var xxswith = 350;
 
 $(document).ready (function() {
     resize();
@@ -32,10 +34,17 @@ function resize() {
     } else if (width >= smwidth) {
         frame.width(600);
         frame.height(1050);
-    } else {
+    } else if (width >= xssmwidth) {
+        frame.width(500);
+        frame.height(1150);
+    } else if (width >= xxswidth) {
         // XS
-        frame.width(360);
-        frame.height(1275);
+        frame.width(340);
+        frame.height(1350);
+    } else {
+        // Custom XXS
+        frame.width(280);
+        frame.height(1600);
     }
 }
 
