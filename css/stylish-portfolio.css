@@ -219,11 +219,11 @@ i.scroll:hover {
 }
 
   .header {
-  background: url(../img/waterfall-bw.jpg) no-repeat top;
+  background: url(../img/waterfall-bw.jpg) no-repeat center;
   height: 650px;
 }
   .map {
-    height: 25%;
+    height: 75%;
   }
 
 }
