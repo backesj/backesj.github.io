@@ -108,7 +108,7 @@ body {
 
 .header {
   display: table;
-  height: 100%;
+  height: 50%;
   width: 100%;
   position: relative;
   background: url(../img/waterfall-bw.jpg) no-repeat center center fixed;
