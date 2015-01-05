@@ -54,8 +54,8 @@ h2 {
   position: absolute;
   top: 65%;
   left: 50%;
-  width: 850px;
-  /*margin-left: -275px;*/
+  width: 650px;
+  margin-left: -275px;
 }
 .jumbo-text h2 {
   font-size: 35px;
