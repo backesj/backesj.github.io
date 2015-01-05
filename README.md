@@ -1,4 +1,4 @@
 backesj.github.io
 =================
 
-Wedding Website
+A wedding website that forked the template from jennyandlucas/jennyandlucas.github.io
