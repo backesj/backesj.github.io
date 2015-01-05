@@ -108,7 +108,7 @@ body {
 
 .header {
   display: table;
-  height: 50%;
+  height: 100%;
   width: 100%;
   position: relative;
   background: url(../img/waterfall-bw.jpg) no-repeat center center fixed;
@@ -223,7 +223,7 @@ i.scroll:hover {
   height: 650px;
 }
   .map {
-    height: 75%;
+    height: 25%;
   }
 
 }
