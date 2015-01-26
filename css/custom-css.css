@@ -62,10 +62,11 @@ h2 {
   font-family: "Roboto Slab", serif;
 }
 .blue-text {
-  color: #91bbe1;
+  /*color: #955251;*/
+  color : #955251;
 }
 .dark-blue-text {
-  color: #416287;
+  color: #955E52;
 }
 .orange-text {
   color: #FCE12D;
@@ -77,10 +78,10 @@ h2 {
   font-size: 150px;
 }
 footer {
-  border-top: 1px solid #416287;
+  border-top: 1px solid #955E52;
   padding-bottom: 10px;
   padding-top: 0px;
-  background-color: #91bbe1;
+  background-color: #955251;
 }
 /* ============ Section Styles ============*/
 .section {
@@ -88,7 +89,7 @@ footer {
   padding-bottom: 50px;
 }
 .welcome {
-  background-color: #91bbe1;
+  background-color: #955251;
   color: white;
 }
 .welcome,
@@ -98,10 +99,10 @@ footer {
 .registry,
 .thingstoknow,
 .rsvp {
-  border-top: 1px solid #416287;
+  border-top: 1px solid #955E52;
 }
 .events {
-  border-bottom: 1px solid #416287;
+  border-bottom: 1px solid #955E52;
 }
 .events,
 .accommodations,
@@ -144,7 +145,7 @@ footer {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  background-color: #91bbe1;
+  background-color: #956E52;
 }
 @media (min-width: 767px) {
   .navbar {
@@ -184,7 +185,7 @@ footer {
 }
 /* MIXINS */
 .custom-borders {
-  border-top: 1px solid #416287;
+  border-top: 1px solid #955E52;
 }
 .blur-img {
   filter: blur(5px);
